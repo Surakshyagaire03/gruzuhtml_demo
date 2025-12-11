@@ -1,0 +1,186 @@
+/* meta bar */
+.author-meta-bar {
+    display: flex;
+    align-items: center; /*center all items */
+    gap: 10px; 
+    font-family: Arial, sans-serif;
+    padding: 10px 0; 
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+/* Author Name and Follow Button ko */
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* name and button ko space */
+}
+
+/* Author Name Styling */
+.author-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Follow Button Styling */
+.follow-button {
+    background-color: #0a66c2;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.follow-button:hover {
+    background-color: #004182;
+}
+
+/* Read Time and Date */
+.post-metadata {
+    display: flex;
+    align-items: center;
+    gap: 10px; /*read time,and date ko space*/
+}
+
+/* Read Time and Date ko laagi styling*/
+.read-time,
+.post-date {
+    color: #666;
+    font-size: 14px;
+}
+
+/* /* dot ko lagi/* */
+.metadata-separator {
+    color: #999;
+    font-size: 14px;
+}
+
+
+
+/* Center the entire page content */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;   /* Centers horizontally */
+    flex-direction: column;
+    align-items: center;       
+    text-align: center;        
+}
+
+section, .no-responses-section {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;   /* section stays in the middle */
+}
+
+.section__list,
+.section__sublist {
+    margin: 0 auto;        /* Centers the list container */
+    padding-left: 0;       
+    text-align: left;      
+    list-style-position: inside; /* Keeps bullets aligned inside */
+}
+
+
+/* --- photoes --- */
+.success-stories-section {
+    max-width: 1200px;
+    margin: 40px auto; /* Added top/bottom margin for spacing */
+    padding: 40px 20px;
+}
+
+/* Title Style/* */
+.success-stories-section .section-title {
+    color: #ae4e76;    
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns dinxa */
+    gap: 30px;
+}
+
+
+
+/* /*  Image Wrapper & Image Sizing/* */
+.card-image-wrapper {
+    width: 100%;
+    height: 250px;  
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+/* Footer/Title below image */
+.card-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-footer p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .cards-container {
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%; 
+        max-width: 400px; 
+        margin-bottom: 20px; 
+    }
+}
+  /* first section */
+.section__list-item {
+    margin: 0 0 24px 0;
+}
+.section__list-item-heading {
+    margin: 0;
+    display: inline-block;
+}
+
+/* second section */
+.section__list {
+margin:0 0 24px 0;
+}
+
+.section__item-head {
+    margin: 0; 
+    display:inline-block;
+}
+
+
+
+
+
